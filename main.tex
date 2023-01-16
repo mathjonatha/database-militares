@@ -1,14 +1,55 @@
-\documentclass{article}
+\documentclass{scrartcl} % https://texdoc.org/serve/scrartcl/0
+\KOMAoptions{%
+    fontsize=11pt,%
+    titlepage=off,%
+    headings=big,%
+    headsepline=off,%
+    paper=a4,%
+    twoside=off,%
+    % parskip=half+,%
+    % bibliography=totoc,%
+}%
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{geometry}
+\geometry{
+	paper=a4paper, 
+	top=3cm, 
+	bottom=2.5cm, 
+	left=1.5cm, 
+	right=2cm,
+	headheight=14pt, % Header height
+	footskip=1.4cm, % Espaço da margem inferior à linha de base do rodapé
+	headsep=10pt, % Espaço da margem superior até a linha de base do cabeçalho
+	%showframe, % Uncomment to show how the type block is set on the page
+}
 
-\title{[BANCO DE QUESTÕES] - MILITARES}
+\title{BANCO DE QUESTÕES MILITARES}
 \author{Matheus Jonatha}
-\date{January 2023}
+% \date{January 2023}
+
+\usepackage{amsmath,amsfonts,amssymb,amsthm,enumitem,multicol}
+\everymath{\displaystyle}
+\usepackage{tasks}
+\usepackage{exsheets}
+\SetupExSheets[question]{name=QUESTÃO}
+
+% NOVOS COMANDOS
+% Operadores Matemáticos
+\newcommand{\sen}{\operatorname{sen}}
+\newcommand{\tg}{\operatorname{tg}}
+\newcommand{\cotg}{\operatorname{cotg}}
+\newcommand{\cossec}{\operatorname{cossec}}
+
 
 \begin{document}
 
 \maketitle
+\begin{multicols}{2}
+\input{CONCURSO/EAM/2017.tex}
 
-\section{Introduction}
 
+% \vfill
+\end{multicols}
 \end{document}
